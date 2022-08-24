@@ -26,16 +26,16 @@ const Content = ({ title, row, children }) => {
       });
     }
   }, [isInView]);
-
+  // bg-[${row % 2 === 0 ? "#FFF" : "#F6F6F6"}]
   return (
-    <div className={`w-full bg-[${row % 2 === 0 ? "#FFF" : "#F6F6F6"}]`}>
+    <div className={`w-full ${row % 2 === 0 ? "bg-[#FFF]" : "bg-[#F6F6F6]"}`}>
       <motion.div
         animate={animation}
         className="container mx-auto max-w-[1024px] px-5 h-screen grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 justify-items-center content-center"
       >
         <div
           ref={ref}
-          className={`order-2 lg:order-${row % 2 === 0 ? "1" : "2"}`}
+          className={`order-2 ${row % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}
         >
           <Typography className="font-bold lg:text-5xl text-xl mb-5">
             {title}
@@ -49,7 +49,7 @@ const Content = ({ title, row, children }) => {
           alt="student"
           height={300}
           width={300}
-          className={`order-1 lg:order-${row % 2 === 0 ? "2" : "1"}`}
+          className={`order-1 ${row % 2 === 0 ? "lg:order-2" : "lg:order-1"}`}
         />
       </motion.div>
     </div>

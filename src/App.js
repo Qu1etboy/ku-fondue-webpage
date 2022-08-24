@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <div className="w-full hero h-screen md:h-auto">
-        <div className="container min-h-[500px] mx-auto max-w-[1024px] p-5 flex flex-col justify-center">
+        <div className="container min-h-[80vh] mx-auto max-w-[1024px] p-5 flex flex-col justify-center">
           <div className="mx-auto lg:mx-0 pt-10 md:pt-0`">
             <span className="font-extrabold text-6xl text-green-500">KU</span>
             <span className="text-6xl ml-2 text-white">Complaint</span>
@@ -28,8 +28,8 @@ function App() {
           <div className="mt-10 text-white font-semibold text-center lg:text-left">
             โปรแกรมแจ้งเรื่องร้องเรียนภายในมหาวิทยาลัยเกษตรศาสตร์
           </div>
-          <div className="flex lg:flex-row flex-col gap-3 justify-center items-center m-5">
-            <Button color="green" onClick={downloadFile}>
+          <div className="flex lg:flex-row flex-col gap-3 justify-center items-center m-5 mt-10">
+            <Button color="green" size="lg" onClick={downloadFile}>
               Download Latest Version
             </Button>
             <a
@@ -37,7 +37,9 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <Button color="green">View source code</Button>
+              <Button color="green" size="lg">
+                View source code
+              </Button>
             </a>
           </div>
         </div>
