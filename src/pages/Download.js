@@ -8,7 +8,7 @@ const Download = () => {
 
   const downloadFile = () => {
     saveAs(
-      "https://github.com/CS211-651/project211-loveandjava/raw/main/jar/CS211-Project-1.0-SNAPSHOT-shaded.jar",
+      "https://www.4shared.com/file/wlaOpZF1ea/CS211-Project-10-SNAPSHOT-shad.html",
       "ku-complaint-0.0.1"
     );
   };
