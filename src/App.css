@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+.hero {
+  position: relative;
+  isolation: isolate;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87d847db-65d7-41e6-ba69-9486b41ebd77/d1ugx1n-d8d5a905-2651-4d59-af80-aec5fe648edb.jpg/v1/fill/w_1039,h_769,q_70,strp/school_bg_classroom_1_by_taskedangelstock_d1ugx1n-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTQ4IiwicGF0aCI6IlwvZlwvODdkODQ3ZGItNjVkNy00MWU2LWJhNjktOTQ4NmI0MWViZDc3XC9kMXVneDFuLWQ4ZDVhOTA1LTI2NTEtNGQ1OS1hZjgwLWFlYzVmZTY0OGVkYi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.GBXQ3Xp32Cnaq5hSx7niCwHu4ToKnFiv3ZVP5B7NRdY");
+  background-size: cover;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 75%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87d847db-65d7-41e6-ba69-9486b41ebd77/d1ugx1n-d8d5a905-2651-4d59-af80-aec5fe648edb.jpg/v1/fill/w_1039,h_769,q_70,strp/school_bg_classroom_1_by_taskedangelstock_d1ugx1n-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTQ4IiwicGF0aCI6IlwvZlwvODdkODQ3ZGItNjVkNy00MWU2LWJhNjktOTQ4NmI0MWViZDc3XC9kMXVneDFuLWQ4ZDVhOTA1LTI2NTEtNGQ1OS1hZjgwLWFlYzVmZTY0OGVkYi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.GBXQ3Xp32Cnaq5hSx7niCwHu4ToKnFiv3ZVP5B7NRdY");
+    background-size: cover; */
 }
