@@ -10,13 +10,6 @@ function App() {
     document.title = "KU Compaint";
   }, []);
 
-  const downloadFile = () => {
-    saveAs(
-      "https://www.4shared.com/file/wlaOpZF1ea/CS211-Project-10-SNAPSHOT-shad.html",
-      "ku-complaint-0.0.1"
-    );
-  };
-
   return (
     <div>
       <div className="w-full hero h-screen md:h-auto">
@@ -29,9 +22,11 @@ function App() {
             โปรแกรมแจ้งเรื่องร้องเรียนภายในมหาวิทยาลัยเกษตรศาสตร์
           </div>
           <div className="flex lg:flex-row flex-col gap-3 justify-center items-center m-5 mt-10">
-            <Button color="green" size="lg" onClick={downloadFile}>
-              Download Latest Version
-            </Button>
+            <a href="https://www.4shared.com/file/wlaOpZF1ea/CS211-Project-10-SNAPSHOT-shad.html">
+              <Button color="green" size="lg">
+                Download Latest Version
+              </Button>
+            </a>
             <a
               href="https://github.com/CS211-651/project211-loveandjava"
               target="_blank"
