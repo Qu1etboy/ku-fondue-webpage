@@ -1,13 +1,12 @@
 import { Button } from "@material-tailwind/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { saveAs } from "file-saver";
 import Content from "./components/Content";
 import "./App.css";
 
 function App() {
   useEffect(() => {
-    document.title = "KU Compaint";
+    document.title = "KU Fondue";
   }, []);
 
   return (
@@ -16,19 +15,23 @@ function App() {
         <div className="container min-h-[80vh] mx-auto max-w-[1024px] p-5 flex flex-col justify-center">
           <div className="mx-auto lg:mx-0 pt-10 md:pt-0`">
             <span className="font-extrabold text-6xl text-green-500">KU</span>
-            <span className="text-6xl ml-2 text-white">Complaint</span>
+            <span className="text-6xl ml-2 text-white">Fondue</span>
           </div>
           <div className="mt-10 text-white font-semibold text-center lg:text-left">
             โปรแกรมแจ้งเรื่องร้องเรียนภายในมหาวิทยาลัยเกษตรศาสตร์
           </div>
           <div className="flex lg:flex-row flex-col gap-3 justify-center items-center m-5 mt-10">
-            <a href="https://www.4shared.com/file/wlaOpZF1ea/CS211-Project-10-SNAPSHOT-shad.html">
+            <a
+              download
+              href="/downloads/ku-fondue.zip"
+              className="text-blue-500 underline"
+            >
               <Button color="green" size="lg">
                 Download Latest Version
               </Button>
             </a>
             <a
-              href="https://github.com/CS211-651/project211-loveandjava"
+              href="https://github.com/qu1etboy/ku-fondue"
               target="_blank"
               rel="noreferrer"
             >

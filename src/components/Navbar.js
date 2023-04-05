@@ -22,10 +22,10 @@ const Navbar = () => {
     <div className="w-full shadow-lg">
       <div className="text-black p-5 container mx-auto max-w-[1024px]">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <Link className="flex items-center" to="/">
             <span className="font-extrabold text-3xl text-green-500">KU</span>
-            <span className="text-xl ml-2">Complaint</span>
-          </div>
+            <span className="text-xl ml-2">Fondue</span>
+          </Link>
           <div className="hidden lg:flex gap-5">{navList}</div>
           <IconButton
             variant="text"

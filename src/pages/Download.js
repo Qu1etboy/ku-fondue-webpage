@@ -19,11 +19,15 @@ const Download = () => {
         </thead>
         <tbody>
           <tr className="border">
-            <td className="border p-2">Version beta 0.0.1</td>
+            <td className="border p-2">Version 1.0.1</td>
             <td className="border p-2">12/08/2022</td>
             <td className="border p-2">
-              <a href="https://www.4shared.com/file/wlaOpZF1ea/CS211-Project-10-SNAPSHOT-shad.html">
-                <button className="text-blue-500 underline">download</button>
+              <a
+                download
+                href="/downloads/ku-fondue.zip"
+                className="text-blue-500 underline"
+              >
+                download
               </a>
             </td>
           </tr>
