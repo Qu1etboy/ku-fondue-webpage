@@ -1,4 +1,4 @@
-# KU Complaint Webpage
+# KU Fondue Webpage
 
 ## Stack
 
